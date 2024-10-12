@@ -1,0 +1,169 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+#navbarNav .navbar-nav .nav-item a:hover {
+    background-color: rgb(99, 135, 228);
+    border-radius: 10px;
+    color: #fff;
+    transition: 0.5s;
+}    
+
+.grid-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.grid-container .tit{
+	color:  rgb(86, 140, 231);
+}
+
+.grid-container .geral-produto {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 16px;
+}
+
+
+.grid-container .geral-produto .Produto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    background-color: #fff;
+    height: 220px;
+    width: 220px;
+    cursor: pointer;
+
+}
+
+.grid-container .geral-produto .Produto:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.grid-container .geral-produto .Produto img {
+    max-width: 70%;
+    height: auto;
+    border-radius: 5px;
+}
+
+
+
+.info-produto {
+    background-color: #fff;
+    width: 40%;
+    height: 70vh;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    z-index: 9999;
+    position: fixed;
+    top: 20%;
+    right: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+
+}
+
+
+.info-produto .info-tit {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 20px;
+    margin-top: 10px;
+}
+
+.info-produto .info-tit .tit-style {
+    width: 95%;
+    text-align: center;
+}
+
+
+.info-produto .info-tit .info-tit-icone {
+    margin: 8px;
+
+}
+
+.info-produto .info-tit .info-tit-icone i {
+    color: rgba(255, 0, 0, 0.798);
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+
+.info-produto .info-img {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    justify-content: space-around;
+    height: 220px;
+
+}
+
+
+.info-produto .info-img img {
+    height: auto;
+    max-width: 40%;
+    border: solid 1px #ccc;
+    border-radius: 10px;
+}
+
+
+.info-produto .info-detalhes {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    height: 55px;
+    text-align: justify;
+    width: 100%;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 5;
+}
+
+
+@media screen and (max-width:880px) {
+    .info-produto {
+        width: 88%;
+        height: 400px;
+        right: 5%;
+    }
+
+    .info-produto .info-detalhes {
+        width: 100%;
+        height: 55px;
+        text-align: justify;
+    }
+}

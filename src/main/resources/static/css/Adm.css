@@ -1,0 +1,122 @@
+
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+
+#navbarNav .navbar-nav .nav-item a:hover {
+	background-color: rgb(105, 153, 233);
+    border-radius: 10px;
+    color: #fff;
+    transition: 0.5s;
+}    
+
+
+.tit-gerenciar{
+	margin-top: 15px;
+    width: 100%;
+	color:  rgb(86, 140, 231);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100px;
+}
+
+
+
+#alerta, #alerta-cadastrar{
+    width: 70%;
+    text-align: center;
+    margin-top: 20px;
+	display: none;
+	z-index: 8000;
+	position: fixed;
+	top:5%
+}
+
+
+nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.formulario-adicionar{
+    width: 80%;
+    margin-top: 50px;
+    
+    
+}
+
+.formulario-adicionar .bot-cadastrar{
+    padding: 30px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+	width: 100%;
+	
+}
+
+.model-editar{
+    width: 80%;
+    margin-top: 50px;
+    
+
+}
+
+.model-editar .bot-atualizar{
+    padding: 30px;
+    display: flex;
+	justify-content: right;
+	align-items: center;
+   	width: 100%;
+}
+
+@media screen and (max-width:880px){
+	#alerta, #alerta-cadastrar{
+		width: 80%;
+		top: 10%;
+		left: 10%;
+		
+		
+	}
+	
+	#container #tabela{
+		height: auto;
+		width: 95%;
+	}
+	
+	.bot-cadastrar{
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	.model-editar .bot-atualizar{
+	        display: flex;
+	        justify-content: center;
+	    }
+
+	    .formulario-adicionar .bot-cadastrar{
+	        display: flex;
+	        justify-content: center;
+	    }
+	
+}

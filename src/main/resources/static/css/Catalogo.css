@@ -1,0 +1,60 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+
+body {
+    height: 100vh;
+    width: 100%;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+
+#navbarNav .navbar-nav .nav-item a:hover {
+	background-color: rgb(99, 135, 228);
+    border-radius: 10px;
+    color: #fff;
+    transition: 0.5s;
+}    
+
+
+
+nav .tit-catalogo {
+    text-align: center;
+    margin: 15px;
+	color:  rgb(86, 140, 231);
+}
+
+.card-geral {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    gap: 20px;
+}
+
+.card-geral .card {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.card-geral .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+.card-geral .card img {
+    width: 50%;
+    height: 150px;
+    border-radius: 100px;
+    margin-top: 20px;
+
+}
